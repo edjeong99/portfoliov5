@@ -2,17 +2,20 @@
     display: flex;
 }
 
-nav{
+.topMenu{
     position : fixed;
     display : flex;
-    justify-content : space-around;
-    width: 40%;
-    left : 40%;
-
+    justify-content : space-evenly;
+   top:0;
+    left : 20%;
+    padding : 20px;
+    background-color: white;
+    width : 80%;
+    z-index : 100;
 }
 
-nav a:hover {
-    color: #f1f1f1;
+.topMenu a:hover {
+    color: #DA4453;
   }
 
 
@@ -32,4 +35,13 @@ nav a:hover {
       width:70%;
       margin-left:30%;
       margin-top : 100px;
+      
   }
+
+  .page, :target ~ .default {
+    display: none;
+}
+
+.default, :target {
+    display: block;
+}
