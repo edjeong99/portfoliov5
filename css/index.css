@@ -1,5 +1,7 @@
 .container{
     display: flex;
+    margin-top : 70px;
+    flex-wrap: wrap ;
 }
 
 .topMenu{
@@ -7,11 +9,12 @@
     display : flex;
     justify-content : space-evenly;
    top:0;
-    left : 20%;
-    padding : 20px;
+    left : 0;
+    padding : 10px;
     background-color: white;
-    width : 80%;
+    width : 100%;
     z-index : 100;
+    font-size : 0.8em;
 }
 
 .topMenu a:hover {
@@ -19,29 +22,71 @@
   }
 
 
+
 .leftSide {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 30%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 50px; /* Stay at the top */
-    left: 0;
+     width: 100%; /* Set the width of the sidebar */
     padding-top: 20px;
-    border:1px red solid;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items: flex-end;
   }
 
+  .leftSide img{
+      width : 30%;
+      border-radius: 50%;
+
+  }
 
   main {
-      width:70%;
-      margin-left:30%;
-      margin-top : 100px;
-      
   }
 
+/* below 2 enable to display only content of clicked menu */
   .page, :target ~ .default {
     display: none;
 }
 
 .default, :target {
     display: block;
+}
+
+
+/* Mobile-first media query, everything above 600px will get the below styles */
+@media (min-width: 600px) {
+    /* your CSS rules */
+    .homeMenu{
+        display:none;
+    }
+  
+    .leftSide {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 30%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 70px; /* Stay at the top */
+    left: 0;
+    padding-top: 20px;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  main {
+    width:60%;
+    margin-left:35%;
+
+    
+}
+
 }
