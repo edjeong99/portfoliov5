@@ -22,22 +22,20 @@
         <a href="#travel">Travel</a>
     </div>
     <div class="container">
-        <div class="leftSide home">
+        <div class="leftSide">
             <img src="images/edProfilePic.jpg" />
 
             <div>Edward Jeong</div>
-            <div>Full Stack Developer</div>
-            <div>Learning and Building.  Repeat.</div>
-            <div class="icons">
-                <a href="https://github.com/edjeong99" target="_blank"><i class="fa fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/edward-jeong-8a568ba/" target="_blank"><i
-                        class="fa fa-linkedin"></i></a>
-                <a href="mailto: edjeong99@gmail.com">
-                    <i class="fa fa-envelope-o"></i></a>
-            </div>
+            <div class="desktop">Full Stack Developer</div>
+            <div class="desktop">Learning and Building.  Repeat.</div>
+         
         </div>
         <main>
             <div id="resume" class="page">
+                <!--spaceHolder is used to create blank space
+                    without this, navigation opens the contents 
+                    that doesn't display right place.  -->
+                <div class="spaceHolder"></div>
                 <h3>Resume</h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -52,6 +50,7 @@
                 </p>
             </div>
             <div id="projects" class="page">
+                <div class="spaceHolder"></div>
                 <h3>Projects</h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -66,6 +65,7 @@
                 </p>
             </div>
             <div id="travel" class="page">
+                <div class="spaceHolder"></div>
                 <h3>My Travel Map</h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -78,10 +78,10 @@
                     and more recently with desktop publishing software like Aldus
                     PageMaker including versions of Lorem Ipsum.
                 </p>
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1twCIEkAmSihVYib7YojdWXrzWsO_qiMm" width="640"
-                    height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1twCIEkAmSihVYib7YojdWXrzWsO_qiMm" width=90% height=90% ></iframe>
             </div>
             <div id="home" class="page default">
+                <div class="spaceHolder"></div>
                 <h3>Home</h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -97,7 +97,15 @@
             </div>
         </main>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="icons">
+            <a href="https://github.com/edjeong99" target="_blank"><i class="fa fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/edward-jeong-8a568ba/" target="_blank"><i
+                    class="fa fa-linkedin"></i></a>
+            <a href="mailto: edjeong99@gmail.com">
+                <i class="fa fa-envelope-o"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>
