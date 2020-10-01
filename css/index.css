@@ -15,7 +15,9 @@
 .smallerFont{
     font-size : 0.9rem;
 }
-
+.bold{
+    font-weight: bold;
+}
 
 /* Class CSS */
 .topMenu{
@@ -82,7 +84,7 @@ text-shadow: 0 0 10px #AAB2BD;
     display: block;
 }
 
-section {
+.page {
     margin : 30px 3%;
 }
 .item{
@@ -102,14 +104,28 @@ section {
     font-weight: bold;
     font-size:1.2rem;
 }
-.itemTitle{
-    font-weight: bold;
-}
+
 .itemDescription{
     padding-left : 10px;
 }
 
+.projectImage{
+    width : 70%;
+    margin : 0 15%;
+}
+.projectTitle{
+    text-align: center;
+}
+
+
 footer{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index : 100;
+    padding : 10px 5px 5px 5px;
+    background-color: white;
     display: flex;
     justify-content: space-around;
 }
@@ -118,10 +134,6 @@ footer{
     /* your CSS rules */
     .desktop{
         display : block;
-    }
-
-    .homremenu{
-        display:none;
     }
   
     .leftSide {
