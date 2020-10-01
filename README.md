@@ -12,4 +12,8 @@ this site is deployed at (To be determined)
 #Installation
 no need to intall anything.
 
-#Mremo
+#Memo
+
+- implement mobile nav
+- swipe left/right to change menu?
+- for mobile, tab for different section? (education, work, etc)
