@@ -39,7 +39,7 @@
 
 .leftSide {
     position : fixed;
-    top:50px;
+    top:45px;
     left:0;
 
      width: 100%; /* Set the width of the sidebar */
@@ -82,13 +82,16 @@ text-shadow: 0 0 10px #AAB2BD;
     display: block;
 }
 
+section {
+    margin : 30px 3%;
+}
 .item{
     width: 90%;
-    margin : 15px 3%;
+    margin: 15px 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: #E6E9ED;
-    padding : 5px 1%;
+    padding : 10px;
 }
 
 .itemFirstLine{
@@ -104,6 +107,11 @@ text-shadow: 0 0 10px #AAB2BD;
 }
 .itemDescription{
     padding-left : 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
 }
 /* Mobile-first media query, everything above 600px will get the below styles */
 @media (min-width: 600px) {
