@@ -15,10 +15,15 @@
 
   <body>
     <div class="topMenu">
+      <a href="javascript:void(0);" class="icon mobile" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div  id="myLinks">
       <a href="#home">Home</a>
       <a href="#resume">Resume</a>
       <a href="#projects">Projects</a>
       <a href="#travel">Travel</a>
+    </div>
     </div>
     <div class="container">
       <div class="leftSide">
@@ -27,6 +32,7 @@
         <div>Edward Jeong</div>
         <div class="desktop">Full Stack Developer</div>
         <div class="desktop">Learning and Building. Repeat.</div>
+
       </div>
       <main>
         <div id="resume" class="page">
@@ -125,10 +131,10 @@
 
           <h3>Projects</h3>
             <div class="project item">
-              <a href="https://www.smartrecipez.com/">
+           
               <img class="projectImage" src="images/recipeProject.PNG" >
-              <div class="projectTitle bold">Smart Receipez</div>
-            </a>
+              <div class="projectTitle bold"> <a href="https://www.smartrecipez.com/">Smart Receipez</a></div>
+            
               <div class="projectDescription">
                 - Professional quality site from scratch with 4 other students at Lambda School
         
@@ -136,10 +142,10 @@
             </div>
 
             <div class="project item">
-              <a href="https://ed-notes.netlify.app/">
+           
               <img class="projectImage" src="images/ednote.png" >
-              <div class="projectTitle bold">Note App</div>
-            </a>
+              <div class="projectTitle bold"><a href="https://ed-notes.netlify.app/">Note App</a></div>
+            
               <div class="projectDescription">
                 - Note app from scratch, using React, NodeJS and PostgreSQL
         
@@ -169,16 +175,15 @@
           <p>
             Hi, welcome to my website. <br />
             <br />
-            I am a full stack developer, most comfortable using Javascript,
-            ReactJS, NodeJS. I can use Java, Angular, SQL, MongoDB, PWA,
+            I am a software developer, most comfortable using Javascript,
+            ReactJS, NodeJS. I am experienced in Java, Angular, SQL, MongoDB, PWA,
             Firebase, and AWS as well.<br />
             <br />
-            I love to learn new technologies and build apps using threm. In
-            fact, after working 20 years on the business side, I became a full
-            stack developer by self-taught, taking online courses, and
-            graduating from a 6-month full-time Bootcamp.
+            I love to learn new technologies and build apps using them. In
+            fact, after working 20 years on the business side, I became a software developer by self-taught, taking online courses, and
+            graduating 6-month program from an online software school.
             <br /><br />
-            I am looking for a full stack developer position, either rremote or
+            I am looking for a software developer position, either remote or
             around Plano TX area. Please send me an remail to
             edjeong99@gmail.com if you like to discuss more about job/project
             opportunities.
@@ -204,5 +209,16 @@
       </div>
       &#169 2020 Jeong
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
