@@ -26,15 +26,19 @@
 .icon > i{
 z-index : 100;
 }
+
+@keyframes example {
+    0%   {left:050%;}
+    100% { left:0; }
+  }
+
   #myLinks{
-      width:100%;
-      opacity:0.8;
+      width:50%;
+      /* opacity:0.8; */
       display:none;
-    
+      position: relative;
       flex-direction: column;
       align-items: flex-end;
-  
-
       padding : 5px 15px;
       height: 100vh;
       /* fix nav height on mobile safari, where 100vh is a little off */
@@ -43,11 +47,16 @@ z-index : 100;
 padding-left: 7vw;
 padding-right: 7vw;
 background: lightblue;
+animation-name: example;
+animation-duration: 0.8s;
   }
   #myLinks > a {
     margin: 20px; /* space out all our links */
     font-size: 1.1rem;
     font-weight: bold;
+    transform: translateX(0);
+    transition: 3.45s;
+    border-bottom: solid 1px  #DA4453;
 }
 
 #myLinks > a:hover{
