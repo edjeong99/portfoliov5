@@ -29,7 +29,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+ */
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -93,7 +93,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 	
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: "Nunito Sans",sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75rem;
