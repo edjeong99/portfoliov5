@@ -55,7 +55,7 @@ animation-duration: 0.8s;
     font-size: 1.1rem;
     font-weight: bold;
     transform: translateX(0);
-    transition: 3.45s;
+    transition: 1s;
     border-bottom: solid 1px  #DA4453;
 }
 
@@ -198,12 +198,12 @@ footer{
     /* border : 1px solid black; */
     margin: auto;
     width: 50%;
-    padding : 5px;
+    padding : 15px ;
     text-align: center;
     /* background-color: #E8CE4D; */
     color : #61BDED; 
    
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size : 1.6rem;
 }
 
@@ -223,23 +223,30 @@ footer{
     }
     #myLinks{
         display:flex;
+        width : 90%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 70px;
+        animation-name: none;
+        /* animation-duration: 0s; */
     }
 
     .topMenu{
         position : fixed;
-        display : flex;
+        flex-direction: row;
         justify-content : space-evenly;
        top:0;
-        left : 0;
-        padding : 10px;
+       left : 0;
+ 
         background-color: white;
         width : 100%;
         z-index : 100;
         font-size : 0.8rem;
+     
     }
 
     .leftSide {
-    height: 100%; /* Full-height: rremove this if you want "auto" height */
+    height: 80%; /* Full-height: remove this if you want "auto" height */
     width: 30%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -249,9 +256,16 @@ footer{
 
     flex-direction: column ;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
   }
 
+  .leftSide img{
+    width : 30%;
+}
+.leftSide div{
+    margin-right : 0;
+    font-size : 120%;
+}
   main {
     width:60%;
     margin-left:35%;
