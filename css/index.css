@@ -20,6 +20,7 @@
   }
 
 .icon {
+    height : 44px;
     padding : 20px 15px 12px 0;
 
 }
@@ -27,12 +28,14 @@
 z-index : 100;
 }
 
+
+
 @keyframes example {
-    0%   {left:050%;}
+    0%   {left:50%;}
     100% { left:0; }
   }
 
-  #myLinks{
+  .myLinks{
       width:30%;
       /* opacity:0.8; */
       display:none;
@@ -43,23 +46,27 @@ z-index : 100;
       height: 100vh;
       /* fix nav height on mobile safari, where 100vh is a little off */
 /* height: -webkit-fill-available; */
-      margin: 0;
+    
 padding-left: 7vw;
 padding-right: 7vw;
 background: lightblue;
 animation-name: example;
 animation-duration: 0.8s;
+background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+border: 1px solid rgba(0, 0, 0, 0.2);
+color:white;
   }
-  #myLinks > a {
+  .myLinks > a {
     margin: 20px; /* space out all our links */
     font-size: 1.1rem;
     font-weight: bold;
     transform: translateX(0);
     transition: 1s;
     border-bottom: solid 1px  #DA4453;
+    color:white;
 }
 
-#myLinks > a:hover{
+.myLinks > a:hover{
 font : red;
 
 }
@@ -214,6 +221,9 @@ footer{
     font-size : 1.6rem;
 }
 
+.active{
+    display:flex;
+}
 
 
 /* Mobile-first media query, everything above 600px will get the below styles */
@@ -228,7 +238,7 @@ footer{
     .desktop{
         display : flex;
     }
-    #myLinks{
+    .myLinks{
         display:flex;
         width : 90%;
         flex-direction: row;
