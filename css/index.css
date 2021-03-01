@@ -19,13 +19,13 @@
     color: #DA4453;
   }
 
-.icon {
+.icons {
+    width : 50%;
     height : 44px;
-    padding : 20px 15px 12px 0;
-
 }
 .icon > i{
 z-index : 100;
+padding-right : 10%;
 }
 
 
@@ -109,7 +109,7 @@ text-shadow: 0 0 10px #AAB2BD;
       font-size:1.5rem;
   }
   .icons a{
-      padding : 0 5px;
+      padding : 0 15px;
   }
 
   main {
